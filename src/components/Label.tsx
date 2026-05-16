@@ -1,7 +1,6 @@
-import { AllCaps } from "../stories/Label.stories";
 import "./Label.css";
 
-interface Props {
+export interface LabelProps {
   /**
    * Text to display
    */
@@ -35,7 +34,7 @@ const Label = ({
   allCaps = false,
   fontColor,
   backgroundColor = "transparent",
-}: Props) => {
+}: LabelProps) => {
   return (
     <span
       className={`${size} ${colorText} label`}

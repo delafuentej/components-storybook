@@ -1,11 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Label } from "../components";
+import type { LabelProps } from "../components/Label";
 
-const meta = {
-  /**
-   * Text to Display
-   */
-  title: "Label",
+const meta: Meta<LabelProps> = {
+  title: "UI/labels/Label",
   tags: ["autodocs"],
   component: Label,
   parameters: {
@@ -13,6 +11,7 @@ const meta = {
   },
   argTypes: {
     size: { control: "inline-radio" },
+    fontColor: { control: "color" },
   },
 } satisfies Meta<typeof Label>;
 
