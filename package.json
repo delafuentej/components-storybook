@@ -11,6 +11,10 @@
     "probe"
   ],
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/delafuentej/components-storybook",
+    "type": "git"
+  },
   "files": [
     "dist/"
   ],
@@ -33,7 +37,8 @@
     "build-storybook": "storybook build",
     "chromatic": "npx chromatic --project-token=chpt_96dc82babe2da1a",
     "clean": "rimraf dist/",
-    "copyfiles": "copyfiles -u 1 src/**/*.css dist/"
+    "copyfiles": "copyfiles -u 1 src/**/*.css dist/",
+    "push": "np"
   },
   "dependencies": {},
   "devDependencies": {
@@ -61,6 +66,7 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "eslint-plugin-storybook": "^10.4.0",
     "globals": "^17.6.0",
+    "np": "^11.2.1",
     "playwright": "^1.60.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
